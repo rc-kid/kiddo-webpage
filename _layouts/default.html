@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <script>document.documentElement.classList.add("js")</script>
+    <link rel="icon" type="image/png" href="{{ '/assets/img/mascot.png' | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Baloo+2:wght@600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+    {% seo %}
+</head>
+<body class="{{ page.body_class }}">
+    {% include nav.html %}
+    <main id="main">
+        {{ content }}
+    </main>
+    {% include footer.html %}
+    <script src="{{ '/assets/js/site.js' | relative_url }}"></script>
+</body>
+</html>

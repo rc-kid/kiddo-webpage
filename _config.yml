@@ -1,0 +1,45 @@
+# kidDo website - built by Jekyll (GitHub Pages)
+#
+# Local preview (from this folder):
+#   bundle install
+#   bundle exec jekyll serve
+#
+title: kidDo
+tagline: A first personal device for making, not just playing.
+description: >-
+  kidDo is an open-source handheld for young creators and a research platform
+  studying how children grow from playing games to making them.
+url: ""
+baseurl: ""
+
+github: https://github.com/rc-kid/rckid
+hackaday: https://hackaday.io/project/205276-rckid
+oshwlab: https://oshwlab.com/zduka/rckid-iii/
+
+markdown: kramdown
+permalink: /log/:year/:month/:slug/
+
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-feed
+
+feed:
+  path: log/feed.xml
+
+# lab log pagination (applies to log/index.html)
+paginate: 6
+paginate_path: /log/page:num/
+
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+  - scope: { path: "" }
+    values: { layout: page }
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - notes
+  - vendor

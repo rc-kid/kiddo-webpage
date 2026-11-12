@@ -1,30 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>RCKid</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+---
+layout: default
+title: kidDo
+body_class: home
+---
+<section class="hero">
+    <div class="wrap hero-in">
+        <div class="hero-text">
+            <h1 class="hero-title"><span class="kd">kidDo</span></h1>
+            <p class="hero-tag">What happens when computing<br><span class="accent">becomes personal for kids?</span></p>
+            <p class="hero-lead">The personal computers of the past shaped a generation because they were understandable, hackable, and personal. kidDo reimagines those qualities for today's children and explores what happens when personal computing becomes personal for kids again.</p>
+            <div class="cta">
+                <a class="btn" href="{{ '/demo.html' | relative_url }}">Try it in your browser</a>
+            </div>
+        </div>
+        <div class="hero-device">
+            <img src="{{ '/assets/img/device-hero.jpg' | relative_url }}" alt="kidDo mkIII prototype in a clear case, with glowing purple buttons and the home screen on its display." width="1000" height="1147">
+        </div>
+    </div>
+</section>
 
-<div class="container">
-    <img class="content" src="logo.png" alt="Centered Image">
-    <p>
-        <a href="https://github.com/rc-kid/rckid/blob/main/VISION.md">Vision</a> 
-        - 
-        <a href="https://hackaday.io/project/205276-rckid">Hackaday</a>
-        -
-        <a href="https://github.com/rc-kid/rckid/">GitHub</a>
-        -
-        <a href="https://oshwlab.com/zduka/rckid-iii/">OSHWLab</a>
-        -
-        <a href="demo.html">Demo</a>
-    </p>
-    <p class="info">
-        Thanks to <a href="https://easyeda.com">EasyEDA</a> and <a href="https://oshwlab.com/">OSHWLab</a> for their support
-    </p>
-
-</div>
-
-</body>
-</html>
+<section class="section">
+    <div class="wrap features">
+        <div class="feature feature-flip">
+            <div class="feature-text">
+                <h2 class="accent">Truly personal</h2>
+                <p>kidDo is designed to belong to a child.</p>
+                <p>Not a classroom. Not a lab. Not a family's shared computer.</p>
+                <p>A child carries it, customizes it, fills it with games, music, drawings, messages, projects, and ideas. Over time it becomes part of their digital life, growing with them from their first creations to increasingly sophisticated projects.</p>
+            </div>
+            <div class="feature-img">
+                {% include placeholder.html label="A child carrying their kidDo" %}
+            </div>
+        </div>
+        <div class="feature">
+            <div class="feature-text">
+                <h2 class="accent">Built for making</h2>
+                <p>Children learn best when they are creating something that matters to them.</p>
+                <p>kidDo starts with creativity. Drawing sprites, composing music, building games, designing worlds, telling stories, and sharing projects all come before formal programming. Programming remains important, but as a tool for expanding what children can create, not as an end in itself.</p>
+            </div>
+            <div class="feature-img">
+                {% include placeholder.html label="Kids drawing sprites and composing music" %}
+            </div>
+        </div>
+        <div class="feature feature-flip">
+            <div class="feature-text">
+                <h2 class="accent">Creations you can hold</h2>
+                <p>Cartridges are more than storage.</p>
+                <p>They are games, projects, hardware extensions, inventions, and gifts. Children can exchange them with friends, modify them, build on each other's ideas, and create entirely new experiences.</p>
+                <p>Every cartridge is programmable. The goal is not to follow instructions but to discover possibilities: from making a game to controlling a robot, inventing a gadget, or building something nobody expected.</p>
+            </div>
+            <div class="feature-img">
+                {% include placeholder.html label="A handful of cartridges" %}
+            </div>
+        </div>
+    </div>
+</section>

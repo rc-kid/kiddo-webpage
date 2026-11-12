@@ -1,51 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>RCKid</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<div class="container">
-    <canvas class="content" id="canvas"></canvas>
-    <p>
-        <a href="https://github.com/rc-kid/rckid/blob/main/VISION.md">Vision</a> 
-        - 
-        <a href="https://hackaday.io/project/205276-rckid">Hackaday</a>
-        -
-        <a href="https://github.com/rc-kid/rckid/">GitHub</a>
-        -
-        <a href="https://oshwlab.com/zduka/rckid-iii/">OSHWLab</a>
-        -
-        <a href="index.html">Home</a>
-    </p>
-    <p class="info">
-        Use arrows for dpad, A, B, for triggers and Enter &amp; Space for Select and Start</br/> 
-        Please note the demo is work in progress and things may not work as intended. <br/>
-        The demo is the latest development branch, which is proof of concept and not a polished product.<br/>
-        Icons by flat-icons, music by audiorezout (<a href="https://github.com/rc-kid/rckid/blob/main/ATTRIBUTION.md">details</a>)
-    </p>
+---
+title: Demo
+lead: The real kidDo firmware, compiled to WebAssembly and running in your browser.
+body_class: demo
+permalink: /demo.html
+---
+<div class="demo-device">
+    <canvas id="canvas" oncontextmenu="event.preventDefault()" tabindex="0" aria-label="kidDo emulator screen"></canvas>
 </div>
 
-  <script>
+<div class="list demo-info">
+    <div class="row row-split">
+        <h3 class="row-meta">Controls</h3>
+        <p class="row-body">Arrow keys for the d-pad, <kbd>A</kbd> and <kbd>B</kbd> for the buttons, <kbd>Enter</kbd> for Select and <kbd>Space</kbd> for Start.</p>
+    </div>
+    <div class="row row-split">
+        <h3 class="row-meta">Heads up</h3>
+        <p class="row-body">This is the latest development branch: a proof of concept, not a polished product, and things may not work as intended. Icons by flat-icons, music by audiorezout (<a href="https://github.com/rc-kid/rckid/blob/main/ATTRIBUTION.md">details</a>).</p>
+    </div>
+</div>
+
+<script>
     // Required when using pthreads + OffscreenCanvas
     var Module = {
-        canvas: (function() {
-        var c = document.getElementById('canvas');
-        return c;
-        })()
+        canvas: document.getElementById('canvas')
     };
-  </script>
-  <!-- Emscripten-generated JS -->
-  <script src="demo.js"></script>
-  <script>
-    // Optional: wait for WASM to initialize
+</script>
+<!-- Emscripten-generated JS -->
+<script src="{{ '/demo.js' | relative_url }}"></script>
+<script>
     Module.onRuntimeInitialized = () => {
-      console.log("Raylib WASM initialized");
-      // don't use this, it runs the main twice, causing problems
-      // if (Module._main) Module._main();
+        console.log("Raylib WASM initialized");
+        // don't call Module._main here, it runs the main twice, causing problems
     };
-  </script>
-</body>
-</html>
+</script>

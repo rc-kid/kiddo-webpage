@@ -1,0 +1,8 @@
+{% comment %} Image placeholder. Params: label (also the alt text), ratio (CSS aspect-ratio, default 4/3), src (optional, e.g. /assets/img/device/pcb-front.jpg).
+Once a file exists at src, the image is shown instead of the placeholder. {% endcomment %}
+{% assign ph_file = nil %}{% if include.src %}{% assign ph_file = site.static_files | where: "path", include.src | first %}{% endif %}
+{% if ph_file %}<img class="ph-img" src="{{ include.src | relative_url }}" alt="{{ include.label }}" loading="lazy">{% else %}<div class="ph" style="aspect-ratio: {{ include.ratio | default: '4/3' }}" role="img" aria-label="Image placeholder: {{ include.label }}">
+    <span class="ph-tag">image</span>
+    <span class="ph-label">{{ include.label | default: "image placeholder" }}</span>
+    {% if include.src %}<span class="ph-src">{{ include.src }}</span>{% endif %}
+</div>{% endif %}

@@ -1,0 +1,21 @@
+---
+title: Lab log
+lead: Progress on hardware and software, observations from the field, and project news. Newest first.
+---
+<div class="list">
+    {% for post in paginator.posts %}
+    {% include log-item.html post=post %}
+    {% endfor %}
+</div>
+
+{% if paginator.total_pages > 1 %}
+<nav class="pagination" aria-label="Log pages">
+    {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}">← Newer</a>{% else %}<span class="disabled">← Newer</span>{% endif %}
+    {% for n in (1..paginator.total_pages) %}
+        {% if n == paginator.page %}<span class="current">{{ n }}</span>
+        {% elsif n == 1 %}<a href="{{ '/log/' | relative_url }}">1</a>
+        {% else %}<a href="{{ site.paginate_path | replace: ':num', n | relative_url }}">{{ n }}</a>{% endif %}
+    {% endfor %}
+    {% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}">Older →</a>{% else %}<span class="disabled">Older →</span>{% endif %}
+</nav>
+{% endif %}

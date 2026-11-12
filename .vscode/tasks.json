@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "jekyll serve",
+            "type": "shell",
+            "command": "jekyll serve",
+            "options": {
+                "env": {
+                    "PATH": "${env:HOME}/.local/share/gem/ruby/3.2.0/bin:${env:PATH}",
+                    "JEKYLL_NO_BUNDLER_REQUIRE": "true"
+                }
+            },
+            "isBackground": true,
+            "problemMatcher": {
+                "owner": "jekyll",
+                "pattern": { "regexp": "^\\s*(Error|Liquid Exception):\\s+(.*)$", "message": 2 },
+                "background": {
+                    "beginsPattern": "(Generating|Regenerating)",
+                    "endsPattern": "(Server running|\\.\\.\\.done in)"
+                }
+            },
+            "group": { "kind": "build", "isDefault": true }
+        }
+    ]
+}
