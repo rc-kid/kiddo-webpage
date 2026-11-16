@@ -9,7 +9,7 @@ tagline: A first personal device for making, not just playing.
 description: >-
   kidDo is an open-source handheld for young creators and a research platform
   studying how children grow from playing games to making them.
-url: ""
+url: "https://kid-do.org"
 baseurl: ""
 
 github: https://github.com/rc-kid/rckid
