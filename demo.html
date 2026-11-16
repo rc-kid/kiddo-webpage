@@ -1,23 +1,18 @@
 ---
 title: Demo
-lead: The real kidDo firmware, compiled to WebAssembly and running in your browser.
+lead: >-
+    The real kidDo firmware, compiled to WebAssembly and running in your browser.
+    Use the arrow keys for the D-pad, <kbd>A</kbd> and <kbd>B</kbd> for the buttons,
+    <kbd>Enter</kbd> for Select and <kbd>Space</kbd> for Start.
+    Heads up: this is the latest development branch, a proof of concept rather than a polished product,
+    so some things may not work as intended.
 body_class: demo
 permalink: /demo.html
 ---
 <div class="demo-device">
     <canvas id="canvas" oncontextmenu="event.preventDefault()" tabindex="0" aria-label="kidDo emulator screen"></canvas>
 </div>
-
-<div class="list demo-info">
-    <div class="row row-split">
-        <h3 class="row-meta">Controls</h3>
-        <p class="row-body">Arrow keys for the d-pad, <kbd>A</kbd> and <kbd>B</kbd> for the buttons, <kbd>Enter</kbd> for Select and <kbd>Space</kbd> for Start.</p>
-    </div>
-    <div class="row row-split">
-        <h3 class="row-meta">Heads up</h3>
-        <p class="row-body">This is the latest development branch: a proof of concept, not a polished product, and things may not work as intended. Icons by flat-icons, music by audiorezout (<a href="https://github.com/rc-kid/rckid/blob/main/ATTRIBUTION.md">details</a>).</p>
-    </div>
-</div>
+<p class="lead demo-credits">Icons by flat-icons, music by audiorezout (<a href="https://github.com/rc-kid/rckid/blob/main/ATTRIBUTION.md">details</a>).</p>
 
 <script>
     // Required when using pthreads + OffscreenCanvas

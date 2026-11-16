@@ -71,3 +71,14 @@
     items.forEach((el) => io.observe(el));
 })();
 
+
+// e-mail links: the address is stored reversed in data attributes so that it is
+// not present in the page source, and assembled here.
+(function () {
+    const rev = (s) => s.split("").reverse().join("");
+    document.querySelectorAll("a.email[data-u][data-d]").forEach((a) => {
+        const addr = rev(a.dataset.u) + "@" + rev(a.dataset.d);
+        a.href = "mailto:" + addr;
+        a.textContent = addr;
+    });
+})();

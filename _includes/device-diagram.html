@@ -1,0 +1,53 @@
+<svg class="diagram" viewBox="0 0 520 476" role="img" aria-labelledby="dd-title dd-desc">
+    <title id="dd-title">kidDo architecture</title>
+    <desc id="dd-desc">The RP2350B CPU connects to the display over a 16-bit parallel bus, the audio codec over I2S, the microSD card over SPI or SDIO, the cartridge over QSPI with HSTX and ADC pins, and to USB-C. An I2C bus links the CPU to the audio codec and to the always-on PY32F030 IO controller, which handles the buttons, RGB LEDs, vibration motor, light sensor, accelerometer, real-time clock crystal, charger and power switch.</desc>
+
+    <!-- wires -->
+    <path class="wire" d="M95 68 V110 H225 V150"/>
+    <path class="wire" d="M425 68 V110 H295 V150"/>
+    <path class="wire" d="M260 68 V150"/>
+    <path class="wire" d="M120 186 H185"/>
+    <path class="wire" d="M335 186 H400"/>
+    <path class="wire" d="M260 222 V340"/>
+    <path class="wire" d="M260 270 H455 V212"/>
+    <circle class="dot" cx="260" cy="270" r="3"/>
+    <path class="wire" d="M150 325 V445 M130 325 H150 M130 365 H150 M130 405 H150 M130 445 H150 M150 372 H175"/>
+    <path class="wire" d="M370 325 V445 M370 325 H390 M370 365 H390 M370 405 H390 M370 445 H390 M345 372 H370"/>
+
+    <!-- bus labels -->
+    <text class="bus t-start" x="103" y="96">SPI / SDIO</text>
+    <text class="bus t-end" x="417" y="96">QSPI · HSTX · ADC</text>
+    <text class="bus" x="152" y="178">16-bit</text>
+    <text class="bus" x="367" y="178">I2S</text>
+    <text class="bus t-start" x="268" y="256">I2C</text>
+
+    <!-- top row -->
+    <rect class="box" x="20" y="16" width="150" height="52" rx="10"/>
+    <text x="95" y="38">microSD</text><text class="sub" x="95" y="54">storage</text>
+    <rect class="box" x="215" y="16" width="90" height="52" rx="10"/>
+    <text x="260" y="46">USB-C</text>
+    <rect class="box" x="350" y="16" width="150" height="52" rx="10"/>
+    <text x="425" y="38">Cartridge</text><text class="sub" x="425" y="54">flash + extras</text>
+
+    <!-- middle row -->
+    <rect class="box" x="10" y="160" width="110" height="52" rx="10"/>
+    <text x="65" y="182">Display</text><text class="sub" x="65" y="198">320×240</text>
+    <rect class="box box-main" x="185" y="150" width="150" height="72" rx="12"/>
+    <text class="title" x="260" y="183">RP2350B</text><text class="sub" x="260" y="202">CPU</text>
+    <rect class="box" x="400" y="160" width="110" height="52" rx="10"/>
+    <text x="455" y="182">Audio codec</text><text class="sub" x="455" y="198">speaker · jack · mic</text>
+
+    <!-- IO controller -->
+    <rect class="box box-main" x="175" y="340" width="170" height="64" rx="12"/>
+    <text class="title" x="260" y="369">PY32F030</text><text class="sub" x="260" y="388">IO MCU · always on</text>
+
+    <rect class="box" x="10" y="310" width="120" height="30" rx="8"/><text x="70" y="330">Buttons</text>
+    <rect class="box" x="10" y="350" width="120" height="30" rx="8"/><text x="70" y="370">RGB LEDs</text>
+    <rect class="box" x="10" y="390" width="120" height="30" rx="8"/><text x="70" y="410">Rumbler</text>
+    <rect class="box" x="10" y="430" width="120" height="30" rx="8"/><text x="70" y="450">Light sensor</text>
+
+    <rect class="box" x="390" y="310" width="120" height="30" rx="8"/><text x="450" y="330">Accelerometer</text>
+    <rect class="box" x="390" y="350" width="120" height="30" rx="8"/><text x="450" y="370">RTC crystal</text>
+    <rect class="box" x="390" y="390" width="120" height="30" rx="8"/><text x="450" y="410">Charger</text>
+    <rect class="box" x="390" y="430" width="120" height="30" rx="8"/><text x="450" y="450">Power switch</text>
+</svg>
