@@ -70,7 +70,7 @@ Each cartridge also gets 10 extra GPIO pins connected to the GPIO/HSTX/ADC perip
         <p>Everything that has to keep working while the device is off is handled by a dedicated microcontroller, a PY32F030 with 64 KB of flash and 4 KB of RAM. It has a real-time clock with its own crystal, so kidDo can keep track of time and work as an alarm clock.</p>
     </div>
     <div class="feature-img">
-        {% include placeholder.html label="kidDo in the dark with the RGB backlit buttons glowing" src="/assets/img/device/detail-buttons-glow.jpg" %}
+        {% include placeholder.html label="kidDo in the dark with the RGB backlit buttons glowing" src="/assets/img/device/detail-buttons-multicolor.jpg" %}
     </div>
 </div>
 
