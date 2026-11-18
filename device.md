@@ -6,9 +6,9 @@ prose: true
 lead: kidDo is a handheld computer designed for children. It is sized to fit their hands and their pockets, takes cartridges, and is open source all the way down, from the firmware to the PCB and the case. This page walks through what is inside the device and why it is there.
 ---
 
-<div class="gallery">
-    {% include placeholder.html label="kidDo mkIV, front view" src="/assets/img/device/full-front.jpg" ratio="3/4" %}
-    {% include placeholder.html label="kidDo mkIV, back view with a cartridge inserted" src="/assets/img/device/full-back.jpg" ratio="3/4" %}
+<div class="gallery gallery-device">
+    {% include placeholder.html label="kidDo mkIV, front view" src="/assets/img/device/full-front.webp" ratio="3/4" %}
+    {% include placeholder.html label="kidDo mkIV, back view with a cartridge inserted" src="/assets/img/device/full-back.webp" ratio="3/4" %}
 </div>
 
 ## Architecture
