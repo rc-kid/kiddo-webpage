@@ -35,7 +35,7 @@ There are two chips at the heart of kidDo. The RP2350B is the CPU: it runs the a
         <p>The panel is connected through a 16-bit parallel (8080) interface, so that the CPU can make use of the framebuffer in the display and avoid strict timing of RGB modes, while spending as little time as possible on the transfer thanks to the wide bus, leaving more headroom for the application's main loop. In the rare cases where a full framebuffer is needed, it takes 150 KB and fits comfortably in the RP2350's memory.</p>
     </div>
     <div class="feature-img">
-        {% include placeholder.html label="Close-up of the display showing pixel art drawn on the device" src="/assets/img/device/detail-display.jpg" %}
+        {% include placeholder.html label="Close-up of the display showing pixel art drawn on the device" src="/assets/img/device/detail-display.png" class="pixelated" %}
     </div>
 </div>
 
@@ -89,7 +89,7 @@ kidDo runs from a 1200 mAh Li-ion battery, recharged over USB-C. It lasts about 
         <p>In the future, kidDo development can be made with another kidDo via a SWD capable cartridge and serial monitor.</p>
     </div>
     <div class="feature-img">
-        {% include placeholder.html label="Debug headers on the mkIV board" src="/assets/img/device/detail-debug.jpg" %}
+        {% include placeholder.html label="Debug headers on the mkIV board" src="/assets/img/device/detail-debug-connector.png" %}
     </div>
 </div>
 
@@ -99,10 +99,9 @@ The device consists of the main PCB and a connector daughterboard. Hand solderin
 
 The case is 3D printed and screwed together with the PCB in the middle. A cartridge is a small PCB with a 3D printed cover glued on.
 
-<div class="gallery">
+<div class="gallery gallery-assembly">
     {% include placeholder.html label="mkIV PCB, front" src="/assets/img/log/mark-iv-1.png" ratio="3/4" %}
-    {% include placeholder.html label="mkIV PCB, back with the connector daughterboard" src="/assets/img/device/pcb-render-back.png" ratio="3/4" %}
-    {% include placeholder.html label="Exploded view of the case, PCB, battery and buttons" src="/assets/img/device/case-render-exploded.png" ratio="3/4" %}
+    {% include placeholder.html label="Exploded view of the case, PCB, battery and buttons" src="/assets/img/device/case-render-exploded.png" ratio="5/4" %}
 </div>
 
 ## Specification

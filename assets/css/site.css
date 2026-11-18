@@ -411,11 +411,14 @@ p { margin: 0 0 1em; }
 .ph-img { border-radius: var(--radius); width: 100%; margin-bottom: 1.5em; }
 .prose > .ph:first-child, .prose > p:first-child > .ph-img { max-width: 420px; margin-left: auto; margin-right: auto; }
 .feature-img img { border-radius: var(--radius); width: 100%; aspect-ratio: 4/3; object-fit: cover; object-position: center 40%; margin: 0; }
+.ph-img.pixelated { image-rendering: pixelated; }
 .device-features { margin: clamp(48px, 8vw, 96px) 0; }
 .prose .feature-text h2 { margin-top: 0; }
 .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 1.5em 0; }
 .gallery .ph, .gallery .ph-img { margin: 0; }
 .gallery-device { max-width: 75%; margin-left: auto; margin-right: auto; }
+.gallery-assembly { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); align-items: center; }
+@media (max-width: 560px) { .gallery-assembly { grid-template-columns: 1fr; } }
 .specs { margin: 1em 0 0; }
 .specs .row-split { grid-template-columns: 160px minmax(0, 1fr); padding: 14px 0; }
 .versions { margin-top: 1.5em; }
