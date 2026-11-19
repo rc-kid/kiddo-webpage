@@ -16,6 +16,10 @@ github: https://github.com/rc-kid/rckid
 hackaday: https://hackaday.io/project/205276-rckid
 oshwlab: https://oshwlab.com/zduka/rckid-iii/
 
+# visitor stats (cookie-free), dashboard at https://kiddo.goatcounter.com
+# only included in production builds (GitHub Pages), not in `jekyll serve`
+goatcounter: kiddo
+
 markdown: kramdown
 permalink: /log/:year/:month/:slug/
 
