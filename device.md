@@ -50,16 +50,16 @@ There are two chips at the heart of kidDo. The RP2350B is the CPU: it runs the a
     </div>
 </div>
 
-## Cartridge
+## Cartridges
 
 The RP2350 has no flash memory of its own and runs its firmware from an external chip over QSPI. kidDo turns this cost-saving limitation into one of its best features: the firmware flash memory does not live inside the device, but on a cartridge that can be swapped and shared, like their namesakes from the handheld gaming consoles of the 90s.
 
 Each cartridge also gets 10 extra GPIO pins connected to the GPIO/HSTX/ADC peripherals of the CPU. This allows the cartridge to carry extra hardware that extends the basic device functionality into almost anything: WiFi, NRF radio and [Jacdac]({{ '/log/2026/08/jacdac/' | relative_url }}) cartridges already exist, while many more are planned. A cartridge can draw up to 500 mA, which allows for surprisingly powerful wireless solutions.
 
 <div class="gallery">
-    {% include placeholder.html label="Basic cartridge, just the flash chip" src="/assets/img/device/cartridge-basic.jpg" %}
-    {% include placeholder.html label="WiFi cartridge" src="/assets/img/device/cartridge-wifi.jpg" %}
-    {% include placeholder.html label="Flashlight cartridge" src="/assets/img/device/cartridge-flashlight.jpg" %}
+    {% include placeholder.html label="Basic cartridge, just the flash chip" src="/assets/img/device/cartridge-basic.webp" %}
+    {% include placeholder.html label="Jacdac cartridge, with two Jacdac connectors on top" src="/assets/img/device/cartridge-jacdac.webp" %}
+    {% include placeholder.html label="NRF radio cartridge, with an IR LED" src="/assets/img/device/cartridge-nrf.webp" %}
 </div>
 
 <div class="feature feature-flip">
@@ -99,10 +99,7 @@ The device consists of the main PCB and a connector daughterboard. Hand solderin
 
 The case is 3D printed and screwed together with the PCB in the middle. A cartridge is a small PCB with a 3D printed cover glued on.
 
-<div class="gallery gallery-assembly">
-    {% include placeholder.html label="mkIV PCB, front" src="/assets/img/log/mark-iv-1.png" ratio="3/4" %}
-    {% include placeholder.html label="Exploded view of the case, PCB, battery and buttons" src="/assets/img/device/case-render-exploded.png" ratio="5/4" %}
-</div>
+{% include exploded-diagram.html %}
 
 ## Specification
 
