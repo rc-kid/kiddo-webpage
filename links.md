@@ -7,7 +7,7 @@ lead: Where to find the source, the hardware, the documentation, and those who h
 
 ## Project
 
-- [GitHub](https://github.com/rc-kid/rckid): source for the SDK, firmware, apps, and this website.
+- [GitHub](https://github.com/rc-kid/kiddo): source for the SDK, firmware, apps, and this website.
 - [Hackaday.io](https://hackaday.io/project/205276-rckid): project page with build logs.
 - [OSHWLab](https://oshwlab.com/zduka/rckid-iii/): open hardware, schematics and PCB of the mkIII board.
 

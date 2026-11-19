@@ -123,4 +123,4 @@ The case is 3D printed and screwed together with the PCB in the middle. A cartri
 
 ## Build your own
 
-Everything is open source, so you can build your own. The schematics and PCB are on [OSHWLab]({{ site.oshwlab }}), and the case models, firmware and SDK are on [GitHub]({{ site.github }}). For the full technical details, including pin assignments, power budgets and the reasoning behind each component, see [HARDWARE.md](https://github.com/rc-kid/rckid/blob/main/HARDWARE.md).
+Everything is open source, so you can build your own. The schematics and PCB are on [OSHWLab]({{ site.oshwlab }}), and the case models, firmware and SDK are on [GitHub]({{ site.github }}). For the full technical details, including pin assignments, power budgets and the reasoning behind each component, see [HARDWARE.md](https://github.com/rc-kid/kiddo/blob/main/HARDWARE.md).

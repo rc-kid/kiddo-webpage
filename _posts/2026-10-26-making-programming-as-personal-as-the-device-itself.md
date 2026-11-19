@@ -74,4 +74,4 @@ In keeping with RCKid's whole philosophy, cartridges can add their own game obje
 
 To be clear about what's real right now: The actual execution engine this language runs on is validated on-device. The asset editor is built; the editors shown here and the full language design are the part I am actively working through right now.
 
-If you want to dig deeper: the editor design is written up [here (SPLASH-E)](https://2026.splashcon.org/details/splash-2026-splash-e/8/RCKid-Designing-a-Programming-Language-Through-Its-Editors), and the full language spec is at [Github](https://github.com/rc-kid/rckid/blob/main/LANGUAGE.md).
+If you want to dig deeper: the editor design is written up [here (SPLASH-E)](https://2026.splashcon.org/details/splash-2026-splash-e/8/RCKid-Designing-a-Programming-Language-Through-Its-Editors), and the full language spec is at [Github](https://github.com/rc-kid/kiddo/blob/main/LANGUAGE.md).

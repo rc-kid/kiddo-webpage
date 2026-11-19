@@ -12,7 +12,7 @@ description: >-
 url: "https://kid-do.org"
 baseurl: ""
 
-github: https://github.com/rc-kid/rckid
+github: https://github.com/rc-kid/kiddo
 hackaday: https://hackaday.io/project/205276-rckid
 oshwlab: https://oshwlab.com/zduka/rckid-iii/
 
